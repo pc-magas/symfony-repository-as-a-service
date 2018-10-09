@@ -30,6 +30,14 @@ class Item
 
 
     /**
+    * @var String $name The Item Name
+    */
+    public function __construct($name)
+    {
+      $this->setName($name);
+    }
+
+    /**
      * Get id
      *
      * @return int
@@ -63,4 +71,3 @@ class Item
         return $this->name;
     }
 }
-
